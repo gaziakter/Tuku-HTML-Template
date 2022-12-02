@@ -1,0 +1,138 @@
+.portfolio-area{
+    & .portfolio-text{
+        & .portfolio-content{
+            & h2{
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 50px; 
+            }
+        }
+        & .portfolio-menu {
+            & button{
+                display: block;
+                background: none;
+                border: none;
+                font-size: 14px;
+                font-weight: 600;
+                font-family: $poppins;
+                color: $primary;
+                margin-bottom: 45px;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+                &:hover {
+                    color: $secondary;
+                }
+                &.active {
+                    color: $secondary !important;
+                }
+                @media #{$md} { 
+                    display: inline-block;
+                }
+                @media #{$xs} { 
+                    width: 100%;
+                    display: block;
+                    padding: 0 5px;
+                    margin-bottom: 15px;
+                }
+                @media #{$sm} { 
+                    display: inline-block;
+                    padding: 0 5px;
+                }
+            }  
+        }
+    }
+    & .portfolio, .portfolio-2{
+        & button.slick-arrow{
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border: none;
+            border-radius: 50px;
+            -webkit-box-shadow: 0 0 6px 6px #00000008;
+            box-shadow: 0 0 6px 6px #00000008;
+            background-color: #fff;
+            font-size: 28px;
+        }
+        & button.slick-prev{
+            left: -70px;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            @media #{$lg} { 
+                left: 0px;
+            }
+            @media #{$md} { 
+                left: 0px;
+            }
+            @media #{$sm} { 
+                left: 0px;
+            }
+}
+        & button.slick-next{
+            right: -70px;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            @media #{$lg} { 
+                right: 0px;
+            }
+            @media #{$md} { 
+                right: 0px;
+            }
+            @media #{$sm} { 
+                right: 0px;
+            }
+}
+        & .portfolio-item {
+            position: relative;
+            & img{
+                width: 100%;
+            }
+            & .portfolio-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: $secondary;
+                overflow: hidden;
+                height: 0;
+                width: 100%;
+                opacity: 0.9;
+                transition: .3s ease;
+                -webkit-transition: .3s ease;
+                -moz-transition: .3s ease;
+                -ms-transition: .3s ease;
+                -o-transition: .3s ease;
+                & .overlay-text {
+                    width: 70%;
+                    color: white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                    & h2 {
+                        color: $white;
+                        font-size: 24px;
+                    }
+                }
+            }
+            &:hover .portfolio-overlay {
+                height: 100%;
+            }
+        }
+    }
+}
+

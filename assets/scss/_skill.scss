@@ -1,0 +1,73 @@
+/*----------------------------------------*/
+/*  05. Skill CSS Start
+/*----------------------------------------*/
+.skill-area{
+    & .skill-img{
+        margin-top: -22px;
+        @media #{$lg} { 
+            margin-top: 52px;
+        }
+        @media #{$xs} { 
+            margin-bottom: 30px;
+        }
+    }
+    & span.ex-year {
+        font-size: 20px;
+        font-family: $poppins;
+        min-width: 100px;
+        float: left;
+        @media #{$md} { 
+            display: block;
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$xs} { 
+            display: block;
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$sm} { 
+            display: block;
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+    }
+    & .ex-details{
+        min-width: 300px;
+        float: left;
+        @media #{$md} { 
+            width: 100%;
+            float: none;
+            text-align: center;
+            display: block;
+        }
+        @media #{$xs} { 
+            width: 100%;
+            float: none;
+            text-align: center;
+            display: block;
+        }
+        @media #{$sm} { 
+            width: 100%;
+            float: none;
+            text-align: center;
+            display: block;
+        }
+        & h2.disignation {
+            font-size: 25px;
+            margin-bottom: 23px;
+            @media #{$md} { 
+                margin-bottom: 2px;
+            }
+            @media #{$xs} { 
+                margin-bottom: 2px;
+            }
+            @media #{$sm} { 
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

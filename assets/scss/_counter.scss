@@ -1,0 +1,27 @@
+/*----------------------------------------*/
+/*  11. Counter CSS Start
+/*----------------------------------------*/
+
+.counter-section{
+    & .counter-area2{
+        background: $blue-bg;
+        & .counter2{
+            width: 170px;
+            & .c-number2{
+                font-family: $poppins;
+                font-size: 35px;
+                font-weight: 600;
+                color: $primary;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            & .c-text2{
+                font-size: 18px;
+                font-weight: 600;
+                @media #{$md} { 
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

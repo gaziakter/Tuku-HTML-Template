@@ -1,0 +1,93 @@
+/*----------------------------------------*/
+/*  14. Project details CSS Start
+/*----------------------------------------*/
+
+.project-detail-page{
+    & .project-title{
+        & h1{
+            font-size: 30px;
+            padding: 0 230px;
+            font-weight: 600;
+            margin-bottom: 60px;
+            @media #{$md} { 
+                padding: 0 100px;
+            }
+            @media #{$sm} { 
+                padding: 0;
+            }
+            @media #{$xs} { 
+                padding: 0;
+            }
+        }
+    }
+    & .project-meta{
+        padding: 55px 100px;
+        box-shadow: -1px 8px 18px 2px #0000000f;
+        @media #{$md} { 
+            padding: 50px;
+        }
+        @media #{$sm} { 
+            padding: 50px;
+        }
+        @media #{$xs} { 
+            padding: 50px;
+        }
+        & .meta-content{
+            font-weight: 500;
+            float: left;
+            width: 50%;
+            @media #{$sm} { 
+                width: 100%;
+            }
+            @media #{$xs} { 
+                width: 100%;
+            }
+            & span.meta-heading{
+                display: block;
+                font-size: 18px;
+                color: $primary;
+                margin-bottom: 15px; 
+                @media #{$xs} { 
+                    margin-bottom: 0; 
+                }
+            }
+            & span.meta-details{
+            padding-right: 30px;
+            display: inline-block;
+            font-size: 17px;
+                @media #{$sm} { 
+                    margin-bottom: 30px;
+                    display: block;
+                }
+                @media #{$xs} { 
+                    margin-bottom: 30px;
+                    display: block;
+                }
+            }
+            & .meta-content-child{
+                & span.meta-heading{
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                & span.meta-child-detail{
+                    font-size: 17px;
+                    @media #{$xs} { 
+                        margin-bottom: 30px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    & .project-detail{
+        & span.detail-heading{
+            display: block;
+            font-size: 18px;
+            color: $primary;
+            margin-bottom: 15px;
+            font-weight: 500;
+            margin-top: 65px;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+/*----------------------------------------*/
+/*  07. Service CSS Start
+/*----------------------------------------*/
+
+.service-area {
+    & .service-container {
+        background: $blue-bg;
+        & .service-content {
+            & img {
+                margin-bottom: 30px;
+            }
+            & h2 {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            @media #{$lg} {
+                padding-right: 0;
+            }
+            @media #{$md} {
+                padding-right: 0;
+            }
+            @media #{$xs} {
+                padding-right: 0;
+                padding: 68px 32px;
+            }
+            @media #{$sm} {
+                padding-right: 0;
+                padding: 68px 32px;
+                margin: 0 50px;
+            }
+        }
+        & .service-con-center {
+            background-color: #fff;
+            padding: 68px;
+            -webkit-box-shadow: 0 0 6px 6px #00000008;
+            box-shadow: 0 0 6px 6px #00000008;
+            @media #{$lg} {
+                padding: 68px 30px;
+            }
+            @media #{$md} {
+                margin: 68px 100px;
+                padding: 68px 80px;
+            }
+            @media #{$xs} {
+                padding: 68px 32px;
+            }
+            @media #{$sm} {
+                padding: 68px 32px;
+                margin: 0 50px;
+            }
+        }
+        & .service-lnr {
+            margin: 68px 0;
+            @media #{$lg} {
+                padding-left: 0;
+            }
+            @media #{$md} {
+                padding-left: 0;
+                padding: 0 190px;
+            }
+            @media #{$xs} {
+                padding-left: 0;
+                padding: 68px 32px;
+            }
+            @media #{$sm} {
+                padding-left: 0;
+                padding: 68px 32px;
+                margin: 0 50px;
+            }
+        }
+    }
+}
+
+/* Home page 3
+-----------------*/
+.service-area-3 {
+    padding-top: 100px;
+    position: relative;
+    & .service-title {
+        & h2 {
+            font-size: 25px;
+            background: $black;
+            color: $white;
+            font-weight: 500;
+            padding: 8px 10px;
+            display: inline-block;
+            position: absolute;
+            right: -40px;
+            top: 45px;
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+        }
+    }
+    & .service-name {
+        margin-left: -15px;
+        & h2 {
+            font-size: 30px;
+            @media #{$xs} {
+                font-size: 25px;
+            }
+        }
+    }
+    & .service-period {
+        & p {
+            margin: 10px 0 0 50px;
+            color: $primary;
+            @media #{$sm} {
+                margin: 10px 0 0 -15px;
+            }
+            @media #{$xs} {
+                margin: 10px 0 0 -15px;
+            }
+        }
+    }
+    & .servide-more {
+        margin-right: -15px;
+        & a {
+            color: $primary;
+            display: block;
+            margin: 8px 0 0 0;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            & i {
+                font-size: 30px;
+            }
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+    & .service-br {
+        border-bottom: 2px solid $grey;
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+        @media #{$md} {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        @media #{$xs} {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    }
+}

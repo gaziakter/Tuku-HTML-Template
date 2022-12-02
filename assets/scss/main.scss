@@ -1,0 +1,51 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Tuku – Personal Portfolio HTML Template
+    Template URI: site.com
+    Description: Tuku is a personal portfolio HTML template which is modern, clean, professional, creative and presentable. It is suitable for any personal portfolio, for web designers and developers, UI designers or any other person can show his works using this psd template.
+    Author: akterhussain
+    Author URI: akterhussain.com
+    Support: akterdev@gmail.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    01. Theme default CSS
+	02. Header CSS
+    03. Introduction CSS
+	04. About CSS
+    05. Portfolio CSS
+    06. Skill CSS
+    07. Service CSS
+    08. Testimonial CSS
+    09. Blog CSS
+    10. Contact CSS
+    11. Counter CSS
+    12. Resume CSS
+    13. Blog-detail CSS
+    14. Project-detail CSS
+    15. Footer CSS
+
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'mixins';
+@import 'common';
+@import 'overlay';
+@import 'header';
+@import 'introduction';
+@import 'about';
+@import 'portfolio';
+@import 'skill';
+@import 'service';
+@import 'testimonial';
+@import 'blog';
+@import 'contact';
+@import 'counter';
+@import 'resume';
+@import 'blog-detail';
+@import 'project-detail';
+@import 'footer';

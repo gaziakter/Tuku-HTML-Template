@@ -1,0 +1,23 @@
+/*----------------------------------------*/
+/*  12. Resume CSS Start
+/*----------------------------------------*/
+
+.resume-area{
+    & .resume-content{
+        & h2{
+            font-size: 18px;
+        }
+        & p{
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        & span{
+            font-size: 14px;
+        }
+        & ul{
+            & li{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

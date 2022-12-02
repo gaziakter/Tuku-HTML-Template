@@ -1,0 +1,74 @@
+/*----------------------------------------*/
+/*  04. About CSS Start
+/*----------------------------------------*/
+
+.about-area{
+    & .about-text{
+        & .about-content{
+            & h2{
+                font-size: 30px;
+                margin-top: -10px;
+                margin-bottom: 23px; 
+                line-height: 43px;
+                @media #{$md} { 
+                    font-size: 28px;
+                }
+                @media #{$xs} { 
+                    font-size: 28px;
+                }
+                @media #{$sm} { 
+                    font-size: 28px;
+                }
+            }
+            & p{
+                margin-bottom: 20px;
+            }
+        }
+        & .counter-area{
+            & .counter {
+                width: 160px;
+                float: left;
+                margin-bottom: -10px;
+                @media #{$md} { 
+                    float: none;
+                    display: inline-block;
+                }
+                @media #{$sm} { 
+                    float: none;
+                    display: inline-block;
+                }
+                @media #{$xs} { 
+                    float: none;
+                    display: inline-block;
+                }
+                & .c-number {
+                    font-size: 34px;
+                    font-weight: bold;
+                    display: inline-block;
+                    color: $secondary;
+                }
+                & .c-number-3{
+                    color:$primary;
+                }
+                & .c-text {
+                    display: inline-block;
+                    font-weight: bold;
+                    line-height: 14px;
+                    color: $primary;
+                    font-size: 12px;
+                }
+            }
+            & .left-counter{
+                width: 100px;
+            }
+        }
+    }
+}
+
+/* Home page 3
+------------------------*/
+.about-img-3{
+    &:hover{
+        opacity: 0.8;
+    }
+}

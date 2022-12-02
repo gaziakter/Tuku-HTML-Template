@@ -1,0 +1,31 @@
+// Font Family
+$poppins: 'Poppins', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+// Colors ---------------
+$white: #ffffff;
+$black: #222;
+$black2: #333333;
+$grey:#777777;
+$primary: #013148;
+$secondary:#d32b28;
+$body-text-color: #899399;
+$hr-border-color:#eceff8;
+$blue-bg: rgb(249, 253, 255);
+
+
+// Heading Color
+$heading-color: #121121;
+
+// Soft color
+$black-soft:#7e7e7e;
+
+
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 575px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+

@@ -1,0 +1,334 @@
+/*----------------------------------------*/
+/*  02. Header CSS Start
+/*----------------------------------------*/
+
+.header-area{
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s;
+    & .logo {
+        margin-left: -15px;
+        padding: 55px 0;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        @media #{$lg} { 
+            margin-left: 0;
+        }
+        @media #{$md} { 
+            margin-left: 0;
+            padding: 30px 0;
+        }
+        @media #{$xs} { 
+            margin-left: 0;
+            padding: 30px 0;
+        }
+        @media #{$sm} { 
+            margin-left: 0;
+            padding: 30px 0;
+        }
+    }
+    & .main-menu {
+        & ul{
+            & li{
+                position: relative;
+                font-family: $poppins;
+                font-weight: 600;
+                font-size: 20px;
+                display: inline-block;
+                padding: 0 12px;
+                color: $primary;
+                transition: all 0.3s;
+                @media #{$lg} { 
+                    padding: 0 10px;
+                }
+                & a{
+                    display: inline-block;
+                    padding: 60px 0;
+                    -webkit-transition: all 0.3s;
+                    -o-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+                &:hover{
+                    color: $secondary;
+                }
+                &:hover ul.submenu{
+                    visibility: visible;
+                    opacity: 0.9;
+                    margin-top: 0;
+                }
+                & ul.submenu{
+                    position: absolute;
+                    top: 100px;
+                    left: 12px;
+                    width: 300px;
+                    z-index: 900;
+                    height: auto;
+                    visibility: hidden;
+                    -webkit-transition: all 0.3s;
+                    -o-transition: all 0.3s;
+                    transition: all 0.3s;
+                    padding: 25px;
+                    opacity: 0;
+                    margin-top: -30px;
+                    box-shadow: 1px 6px 5px 0px #949393;
+                    border-radius: 4px;
+                    text-align: left;
+                    background: #ffffff;
+                    & li{
+                        color: $secondary;
+                        -webkit-transition: all 0.3s;
+                        -o-transition: all 0.3s;
+                        transition: all 0.3s;
+                        display: block;
+                        :hover{
+                            color: $primary;
+                        }
+                        & a{
+                            padding: 12px 0;
+                        }
+                    }
+                }
+            }   
+        }
+        &.main-menu-3{
+            & ul{
+                & li{
+                    color: $white;
+                    &:hover{
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    & .off-canvas-area{
+        position: relative;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        & .off-canvas-icon{
+            width: 46px;
+            height: 46px;
+            color: $primary;
+            background: $white;
+            box-shadow: 0 0 7px 2px #00000021;
+            border-radius: 50px;
+            padding: 12px 14px;
+            margin: 53px -15px 53px 0;
+            cursor: pointer;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            & i{
+                font-size: 22px;
+            }
+            @media #{$lg} { 
+                margin: 53px 0 53px 0;
+            }
+            &:hover{
+                background: $secondary;
+                color: $white;
+            }
+        }
+        & .off-canvas-icon-2{
+            margin: 0;
+        }
+        & .off-canvas-content{
+            width: 0px;
+            height: 100vh;
+            background-color: $primary;
+            top: 0;
+            right: 0;
+            position: fixed;
+            visibility: hidden;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            & span.close-canvas{
+                color: #fff;
+                border-radius: 50px;
+                text-align: right;
+                cursor: pointer;
+                display: block;
+                margin: 20px 35px 0px 0px;
+                font-size: 35px;
+                transition: 0.3s;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+                -ms-transition: 0.3s;
+                -o-transition: 0.3s;
+                &:hover{
+                    color: $secondary;
+                }
+            }
+            & nav {
+                & ul{
+                    & li{
+                        display: block;
+                        font-family: $poppins;
+                        font-weight: 600;
+                        font-size: 22px;
+                        color: $white;
+                        transition: 0.3s;
+                        -webkit-transition: 0.3s;
+                        -moz-transition: 0.3s;
+                        -ms-transition: 0.3s;
+                        -o-transition: 0.3s;
+                        padding: 20px 30px;
+                        @media #{$xs} { 
+                            padding: 20px 50px;
+                        }
+                        &:hover{
+                            background-color: $secondary;
+                        }
+                        & a{
+                            display: block;
+                            transition: 0.3s;
+                            -webkit-transition: 0.3s;
+                            -moz-transition: 0.3s;
+                            -ms-transition: 0.3s;
+                            -o-transition: 0.3s;
+                            &:hover{
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            & .close-canvas-bg{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100vw;
+                height: 100vh;
+                background: $primary;
+                content: "";
+                z-index: -1;
+                opacity: 0.8;
+                @media #{$lg} { 
+                    right: 80px;
+                }
+            }
+        }
+    }
+    & .show-canvas{
+        visibility: visible !important;
+        width: 400px !important;
+        @media #{$lg} { 
+            width: 350px !important;
+        }
+        @media #{$xs} { 
+            width: 100% !important;
+        }
+    } 
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $white;
+    -webkit-box-shadow: 0 0 5px 0px #949393;
+    box-shadow: 0 0 5px 0px #949393;
+    opacity: 0.9;
+    & .logo{
+        margin-left: 0;
+        padding: 12px 0;
+    }
+    & .main-menu{
+        & nav{
+            & ul{
+                & li{
+                    & a{
+                        padding: 20px 0;
+                    }
+                    & ul.submenu{
+                        top: 70px;
+                    }
+                }
+            }
+        }
+    }
+    & .off-canvas-area{
+        & .off-canvas-icon{
+            margin: 12px 0;
+        }
+    }
+}
+
+/*---
+Home page 2 -----------------*/
+.header-home-2{
+    padding: 55px 0;
+    & .top-menu-btn{
+        width: 50px;
+        height: 50px;
+        color: $primary;
+        background: $white;
+        border-radius: 50px;
+        box-shadow: 0 0 4px #00000080;
+        padding: 14px 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        & i{
+            font-size: 22px;
+        }
+        &:hover{
+            background: $secondary;
+            color: $white;
+        }
+    }
+    & .info-area{
+        margin-top: 12px;
+        & a{
+            font-family: $poppins;
+            font-weight: 700;
+            color: $primary;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            & i{
+                margin-right: 10px;
+            }
+            &:hover{
+                color: $secondary;
+            }
+        }
+    }
+}
+
+/*---
+Home page 3 -----------------*/
+.sticky3{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $black;
+    -webkit-box-shadow: 0 0 5px 0px #949393;
+    box-shadow: 0 0 5px 0px #949393;
+    opacity: 0.9;
+    & .logo{
+        margin-left: 0;
+    }
+    & .off-canvas-area{
+        & .off-canvas-icon{
+            margin: 53px 0 53px 0;
+        }
+    }
+}
+.active a{
+    color: $secondary;
+}
